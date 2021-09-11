@@ -1,14 +1,6 @@
 package com.umg.rroca.billing.model;
 
-import java.util.Date;
 import javax.persistence.*;
-
-import org.hibernate.annotations.UpdateTimestamp;
-import org.hibernate.annotations.CreationTimestamp;
-import org.springframework.data.annotation.CreatedBy;
-import org.springframework.data.annotation.CreatedDate;
-import org.springframework.data.annotation.LastModifiedBy;
-import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 @Entity
@@ -119,7 +111,7 @@ public class Client {
     /**
      * Sets phone.
      *
-     * @param phone
+     * @param phone the phone
      */
     public void setPhone(String phone) {
         this.phone = phone;
@@ -137,7 +129,7 @@ public class Client {
     /**
      * Sets nit.
      *
-     * @param nit
+     * @param nit the nit
      */
     public void setNit(String nit) {
         this.nit = nit;
