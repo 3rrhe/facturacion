@@ -1,5 +1,5 @@
 CREATE TABLE `client` (
-  `client_id` int,
+  `client_id` int NOT NULL AUTO_INCREMENT,
   `first_name` varchar(255),
   `last_name` varchar(255),
   `email` varchar(200),
@@ -9,7 +9,7 @@ CREATE TABLE `client` (
 );
 
 CREATE TABLE `product` (
-  `product_id` int,
+  `product_id` int NOT NULL AUTO_INCREMENT,
   `name` varchar(255),
   `code` varchar(50),
   `on_hand` int,
@@ -18,7 +18,7 @@ CREATE TABLE `product` (
 );
 
 CREATE TABLE `invoice` (
-  `invoice_id` int,
+  `invoice_id` int NOT NULL AUTO_INCREMENT,
   `user_id` int,
   `total` float,
   `created_at` datetime,
@@ -27,7 +27,7 @@ CREATE TABLE `invoice` (
 );
 
 CREATE TABLE `invoice_has_product` (
-  `invoice_has_product_id` int,
+  `invoice_has_product_id` int NOT NULL AUTO_INCREMENT,
   `product_id` int,
   `invoice_id` int,
   `quantity` int,
